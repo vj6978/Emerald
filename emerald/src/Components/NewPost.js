@@ -15,7 +15,6 @@ class NewPost extends Component
     handleFormSubmit = (event) => {
         //Make Post API CALL. Post to server this.state.newPost
         event.preventDefault()
-        console.log(this.state.newPost)
     }
 
     render()

@@ -23,12 +23,12 @@ class Card extends Component
                     <div className="card-body">
                         {this.props.body}
                     </div>
-                    {
-                        this.props.author === this.props.loggedInAs &&
-                        <div className="card-footer">
-                            <button type="button" className="btn btn-danger" onClick={() => this.handleDelete(this.props.id)}>Delete</button>
-                        </div>
-                    }
+                    <div className="card-footer">
+                        {
+                            this.props.author === this.props.loggedInAs &&
+                                <button type="button" className="btn btn-danger" onClick={() => this.handleDelete(this.props.id)}>Delete</button>
+                        }
+                     </div>
                 </div>
             </div>
         );
