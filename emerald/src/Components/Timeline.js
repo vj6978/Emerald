@@ -4,7 +4,7 @@ import Card from './Card'
 class Timeline extends Component
 {
     state = {
-        author: "Vimal",
+        loggedInAs: "Vimal",
         comments: [
             {
                 id: "1",
@@ -55,10 +55,10 @@ class Timeline extends Component
 
         //On successful login, set author from localStorage
         // this.setState({
-        //     author: localStorage.getItem("userName")
+        //     author: localStorage.getItem("loggedInAs")
         // })
 
-        localStorage.setItem("userName", "Vimal")
+        localStorage.setItem("loggedInAs", "Vimal")
     }
 
     render()
@@ -66,7 +66,7 @@ class Timeline extends Component
         return(
             <div>
                 {
-                    this.state.comments && this.state.comments.map(post => <Card author={post.author} date={post.date} body={post.body} key={post.id}></Card>)
+                    this.state.comments && this.state.comments.map(post => <Card author={post.author} date={post.date} body={post.body} loggedInAs={this.state.loggedInAs} key={post.id}></Card>)
                 }
             </div>
         )
