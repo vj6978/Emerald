@@ -6,10 +6,11 @@ class Card extends Component
     state =  {
     }
 
-    componentDidMount()
-    {
-        // Make API call to get posts for dashboard
-    }  
+    handleDelete = (id) => {
+        //DELETE post API call
+        event.preventDefault()
+
+    }
 
     render()
     {
@@ -25,7 +26,7 @@ class Card extends Component
                     {
                         this.props.author === this.props.loggedInAs &&
                         <div className="card-footer">
-                            <button type="button" className="btn btn-danger">Delete</button>
+                            <button type="button" className="btn btn-danger" onClick={() => this.handleDelete(this.props.id)}>Delete</button>
                         </div>
                     }
                 </div>

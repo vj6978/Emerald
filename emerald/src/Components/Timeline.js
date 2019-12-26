@@ -66,7 +66,7 @@ class Timeline extends Component
         return(
             <div>
                 {
-                    this.state.comments && this.state.comments.map(post => <Card author={post.author} date={post.date} body={post.body} loggedInAs={this.state.loggedInAs} key={post.id}></Card>)
+                    this.state.comments.length === 0 ? <div className="card"><h4>Nothing to Show!</h4></div> : this.state.comments.map(post => <Card author={post.author} date={post.date} body={post.body} loggedInAs={this.state.loggedInAs} id={post.id} key={post.id}></Card>)
                 }
             </div>
         )
