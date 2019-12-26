@@ -1,29 +1,34 @@
-import React, { useEffect } from 'react'
+import React, {Component} from 'react'
 import './Card.css'
 
-export default function Card(props)
+class Card extends Component
 {
-    const userName = localStorage.getItem("userName")
-    let deleteButton;
+    state =  {
+    }
 
-    useEffect(() =>
+    componentDidMount()
     {
-        userName[0] === props.author ? deleteButton = <button type="button" className="btn btn-danger">Delete</button> : deleteButton = null
-    });
+        // Make API call to get posts for dashboard
+    }  
 
-    return(
-        <div>
-            <div className="card">
-                <div className="card-header">
-                    <h4>{props.author}, <small>{props.date}</small></h4> 
-                </div>
-                <div className="card-body">
-                    {props.body}
-                </div>
-                <div className="card-footer">
-                    {deleteButton}
+    render()
+    {
+        return(
+            <div>
+                <div className="card">
+                    <div className="card-header">
+                        <h4>{this.props.author},  <small>{this.props.date}</small></h4> 
+                    </div>
+                    <div className="card-body">
+                        {this.props.body}
+                    </div>
+                        <div className="card-footer">
+                            <button type="button" className="btn btn-danger">Delete</button>
+                        </div>
                 </div>
             </div>
-        </div>
-    );
+        );
+    }
 } 
+
+export default Card
