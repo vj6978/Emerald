@@ -1,11 +1,8 @@
 import React, {Component} from 'react'
-import {Link} from 'react-router-dom'
-import Timeline from './Timeline'
 import TimelineImage from './TimelineImage'
-import NewPost from './NewPost'
-import './Dashboard.css'
+import './Issues.css'
 
-class Dashboard extends Component
+class Issues extends Component
 {
     state = {
         newPost: ""
@@ -19,12 +16,11 @@ class Dashboard extends Component
                     <TimelineImage></TimelineImage>
                 </div>
                 <div className="timeline-container">
-                    <NewPost></NewPost>
-                    <Timeline></Timeline>
+                    Issue List
                 </div>
             </div>
         )
     }
 }
 
-export default Dashboard
+export default Issues
