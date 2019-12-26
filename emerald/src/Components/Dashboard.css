@@ -3,13 +3,13 @@
 }
 
 .image-container {
-    flex: 30%;
+    flex: 20%;
     width: 100px;
     overflow: hidden;
 }
 
 .timeline-container {
-    flex: 70%;
+    flex: 80%;
     width: 50px;
-    overflow: hidden;
+    overflow: scroll;
 }
