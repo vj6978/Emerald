@@ -2,11 +2,11 @@ import React from 'react'
 import {Route, BrowserRouter as Router} from 'react-router-dom'
 import ReactDOM from 'react-dom';
 import './index.css';
-import Timeline from './Components/Timeline'
+import Dashboard from './Components/Dashboard'
 
 const routes = (
   <Router>
-    <Route path="/timeline" component={Timeline}></Route>
+    <Route path="/dashboard" component={Dashboard}></Route>
   </Router>
 )
 

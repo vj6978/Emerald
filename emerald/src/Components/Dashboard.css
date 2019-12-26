@@ -1,0 +1,15 @@
+.row {
+    display: flex;
+}
+
+.image-container {
+    flex: 30%;
+    width: 100px;
+    overflow: hidden;
+}
+
+.timeline-container {
+    flex: 70%;
+    width: 50px;
+    overflow: hidden;
+}
