@@ -1,0 +1,22 @@
+.row {
+    display: flex;
+}
+
+.image-container {
+    flex: 20%;
+    width: 100px;
+    overflow: hidden;
+}
+
+.timeline-container {
+    flex: 80%;
+    width: 50px;
+    overflow: scroll;
+}
+
+.new-post {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}

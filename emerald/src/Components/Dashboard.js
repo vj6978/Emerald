@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import {Link} from 'react-router-dom'
 import Timeline from './Timeline'
 import TimelineImage from './TimelineImage'
 import NewPost from './NewPost'
@@ -7,10 +6,6 @@ import './Dashboard.css'
 
 class Dashboard extends Component
 {
-    state = {
-        newPost: ""
-    }
-
     render()
     {
         return(

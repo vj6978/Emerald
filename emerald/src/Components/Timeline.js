@@ -58,6 +58,8 @@ class Timeline extends Component
         //     author: localStorage.getItem("loggedInAs")
         // })
 
+        //Call GET api to get all posts
+
         localStorage.setItem("loggedInAs", "Vimal")
     }
 
