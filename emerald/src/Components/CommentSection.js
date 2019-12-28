@@ -1,23 +1,15 @@
-import React, {Component} from 'react'
+import React from 'react'
 import NewPost from './NewPost'
 import CommentPane from './CommentPane'
 
-class CommentSection extends Component
+function CommentSection()
 {
-    state = {
-
-    }
-
-    render()
-    {
-        return(
-            <div>
-                <CommentPane></CommentPane>
-                <NewPost></NewPost>
-            </div>
-        );
-    }
-    
+    return(
+        <div>
+            <CommentPane></CommentPane>
+            <NewPost></NewPost>
+        </div>
+    );    
 }
 
 export default CommentSection

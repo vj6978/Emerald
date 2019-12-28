@@ -12,7 +12,11 @@ class CommentPane extends Component
         return(
             <div>
                 <div className="commentPane">
-
+                    <div className="card">
+                        <div className="card-body">
+                            {/* Add logic for comments here */}
+                        </div>
+                    </div>
                 </div>
             </div>
         );
