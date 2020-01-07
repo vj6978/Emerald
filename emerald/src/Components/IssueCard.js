@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import './IssueCard.css'
 
 const IssueCard = (props) =>
 {
+    const [status, setStatus] = useState("inProgress")
+
+    useEffect(() => {
+        setStatus(props.issue.status)
+    })
+
+    const statusUpdate = useCallback(() => {
+        alert("Ibnsider")
+    })
+
     return(
         <React.Fragment>
             <tr>
@@ -12,7 +22,7 @@ const IssueCard = (props) =>
                 <td>{props.issue.reportedOn}</td>
                 <td>{props.issue.resolvedOn}</td>
                 <td>{props.issue.comments}</td>
-                <td>{props.issue.status}</td>
+                <td><button className="btn {statusButtonColor}" onClick={statusUpdate}>{props.issue.status}</button></td>
             </tr>
         </React.Fragment>
     );

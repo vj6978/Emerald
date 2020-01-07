@@ -13,7 +13,7 @@ class IssueList extends Component
                 reportedOn: "10/10/10",
                 resolvedOn: "20/22/22",
                 comments: "Vimal JAmes",
-                status: "Closed"
+                status: "inProgress"
             },
             {
                 id: "2",
@@ -22,7 +22,7 @@ class IssueList extends Component
                 reportedOn: "10/10/10",
                 resolvedOn: "20/22/22",
                 comments: "Vimal JAmes",
-                status: "Closed"
+                status: "open"
             },
             {
                 id: "3",
@@ -31,7 +31,7 @@ class IssueList extends Component
                 reportedOn: "10/10/10",
                 resolvedOn: "20/22/22",
                 comments: "Vimal JAmes",
-                status: "Closed"
+                status: "closed"
             },
             {
                 id: "4",
@@ -40,7 +40,7 @@ class IssueList extends Component
                 reportedOn: "10/10/10",
                 resolvedOn: "20/22/22",
                 comments: "Vimal JAmes",
-                status: "Closed"
+                status: "open"
             },
             {
                 id: "5",
@@ -49,7 +49,7 @@ class IssueList extends Component
                 reportedOn: "10/10/10",
                 resolvedOn: "20/22/22",
                 comments: "Vimal JAmes",
-                status: "Closed"
+                status: "closed"
             },
             
         ]
@@ -67,7 +67,7 @@ class IssueList extends Component
         return(
             <div>
                 <div className="card">
-                    <h3 className="issueHeader">Issues We Faced So Far</h3>
+                    <h3 className="issueHeader">Issues Log</h3>
                     <table className="table">
                         <thead>
                             <tr>
