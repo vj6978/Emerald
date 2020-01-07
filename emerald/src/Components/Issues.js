@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import TimelineImage from './TimelineImage'
+import IssueList from './IssueList'
 import './Issues.css'
 
 class Issues extends Component
@@ -16,7 +17,7 @@ class Issues extends Component
                     <TimelineImage></TimelineImage>
                 </div>
                 <div className="timeline-container">
-                    Issue List
+                    <IssueList></IssueList>
                 </div>
             </div>
         )
