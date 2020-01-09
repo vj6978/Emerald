@@ -1,31 +1,32 @@
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { Component } from 'react'
 import './IssueCard.css'
 
-const IssueCard = (props) =>
+class IssueCard extends Component
 {
-    const [status, setStatus] = useState("inProgress")
+    state = {
 
-    useEffect(() => {
-        setStatus(props.issue.status)
-    })
+    }
 
-    const statusUpdate = useCallback(() => {
-        alert("Ibnsider")
-    })
+    statusUpdate = (event) => {
+        
+    }
 
-    return(
-        <React.Fragment>
-            <tr>
-                <th scope="row">{props.issue.id}</th>
-                <td>{props.issue.issue}</td>
-                <td>{props.issue.resolution}</td>
-                <td>{props.issue.reportedOn}</td>
-                <td>{props.issue.resolvedOn}</td>
-                <td>{props.issue.comments}</td>
-                <td><button className="btn {statusButtonColor}" onClick={statusUpdate}>{props.issue.status}</button></td>
-            </tr>
-        </React.Fragment>
-    );
+    render()
+    {
+        return(
+            <React.Fragment>
+                <tr>
+                    <th scope="row">{this.props.issue.id}</th>
+                    <td>{this.props.issue.issue}</td>
+                    <td>{this.props.issue.resolution}</td>
+                    <td>{this.props.issue.reportedOn}</td>
+                    <td>{this.props.issue.resolvedOn}</td>
+                    <td>{this.props.issue.comments}</td>
+                    <td><button className="btn {statusButtonColor}" onClick={this.statusUpdate}>{this.props.issue.status}</button></td>
+                </tr>
+            </React.Fragment>
+        );
+    }
 }
 
 export default IssueCard
