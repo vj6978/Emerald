@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import './Elaborate.css'
 
 class Elaborate extends Component 
 {
@@ -10,7 +11,7 @@ class Elaborate extends Component
     {
         return(
             <div>
-                
+               
             </div>
         );
     }
