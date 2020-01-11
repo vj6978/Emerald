@@ -27,7 +27,7 @@ class NewPost extends Component
                     <div className="newPostInput">
                         <form onSubmit={this.handleFormSubmit}>
                             <div className="form-group">
-                                <input type="text" className="form-control" id="newPost" placeholder="New Post ... " onChange={this.handleInput}/>
+                                <input type="text" className="form-control" id="newPost" placeholder="Start typing ... " onChange={this.handleInput}/>
                             </div>
         
                             <button type="submit" className="btn btn-primary">Submit</button>
