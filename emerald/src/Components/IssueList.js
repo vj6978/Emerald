@@ -9,46 +9,26 @@ class IssueList extends Component
             {
                 id: "1",
                 issue: "Pi Broke",
-                resolution: "Fixed it",
-                reportedOn: "10/10/10",
-                resolvedOn: "20/22/22",
-                comments: "Vimal JAmes",
                 status: "inProgress"
             },
             {
                 id: "2",
                 issue: "Pi Broke",
-                resolution: "Fixed it",
-                reportedOn: "10/10/10",
-                resolvedOn: "20/22/22",
-                comments: "Vimal JAmes",
                 status: "open"
             },
             {
                 id: "3",
                 issue: "Pi Broke",
-                resolution: "Fixed it",
-                reportedOn: "10/10/10",
-                resolvedOn: "20/22/22",
-                comments: "Vimal JAmes",
                 status: "closed"
             },
             {
                 id: "4",
                 issue: "Pi Broke",
-                resolution: "Fixed it",
-                reportedOn: "10/10/10",
-                resolvedOn: "20/22/22",
-                comments: "Vimal JAmes",
                 status: "open"
             },
             {
                 id: "5",
                 issue: "Pi Broke",
-                resolution: "Fixed it",
-                reportedOn: "10/10/10",
-                resolvedOn: "20/22/22",
-                comments: "Vimal JAmes",
                 status: "closed"
             },
             
@@ -73,10 +53,6 @@ class IssueList extends Component
                             <tr>
                                 <th scope="col">ID</th>
                                 <th scope="col">Issue</th>
-                                <th scope="col">Resolution</th>
-                                <th scope="col">Reported On</th>
-                                <th scope="col">Resolved On</th>
-                                <th scope="col">Comments</th>
                                 <th scope="col">Status</th>
                             </tr>
                         </thead>
