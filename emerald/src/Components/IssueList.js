@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import IssueCard from './IssueCard'
 import './IssueList.css'
+import NothingToShowHere from './NothingToShowHere'
 
 class IssueList extends Component 
 {
@@ -41,7 +42,7 @@ class IssueList extends Component
 
     render()
     {
-        let issueList = this.state.issues.length === 0 ? <div className="card"><h4>Nothing to show!</h4></div> : this.state.issues.map(issueItem => 
+        let issueList = this.state.issues.length === 0 ? <NothingToShowHere /> : this.state.issues.map(issueItem => 
             <IssueCard issue={issueItem} key={issueItem.id}></IssueCard>)
 
         return(

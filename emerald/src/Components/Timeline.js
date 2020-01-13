@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import NothingToShowHere from './NothingToShowHere'
 import Card from './Card'
 
 class Timeline extends Component
@@ -69,7 +70,7 @@ class Timeline extends Component
             <div>
                 <div>
                     {
-                        this.state.comments.length === 0 ? <div className="card"><h4>Nothing to Show!</h4></div> : this.state.comments.map(post => <Card author={post.author} date={post.date} body={post.body} loggedInAs={this.state.loggedInAs} id={post.id} key={post.id}></Card>)
+                        this.state.comments.length === 0 ? <NothingToShowHere /> : this.state.comments.map(post => <Card author={post.author} date={post.date} body={post.body} loggedInAs={this.state.loggedInAs} id={post.id} key={post.id}></Card>)
                     }
                 </div>
             </div>

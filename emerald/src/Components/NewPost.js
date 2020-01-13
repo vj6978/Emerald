@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import { FilePond } from 'react-filepond';
 import 'filepond/dist/filepond.min.css';
 
 class NewPost extends Component
@@ -31,9 +30,6 @@ class NewPost extends Component
                             </div>
         
                             <button type="submit" className="btn btn-primary">Submit</button>
-
-                            {/* Update server URL for file upload */}
-                            <FilePond allowMultiple={true} server="" />
                         </form>
                     </div>
                 </div>

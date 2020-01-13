@@ -10,7 +10,8 @@ class Dashboard extends Component
         return(
             <div>
                 <div className="issues-header">
-                    <a href="/issues" className="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Issues History</a>
+                    <a href="/issues" className="btn btn-secondary active" role="button" aria-pressed="true">Issues History</a>
+                    <a href="/shareFiles" className="btn btn-primary active" role="button" aria-pressed="true">Share Files</a>
                 </div>
                 <NewPost></NewPost>
                 <Timeline></Timeline>

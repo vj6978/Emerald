@@ -27,3 +27,28 @@
     padding-right: 50px;
     padding-bottom: 5px;
 }
+
+.issues-button {
+
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.share-files-button {
+
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+a {
+    margin: 10px 10px 10px 10px;
+}
