@@ -13,7 +13,7 @@ import * as Routes from './Routes/Routes'
 const routes = (
   <Router>
     {/* <Route path={Routes.LANDING} component={}></Route>*/}
-    <Route path={Routes.LOGIN} component={BackgroundHOC(Login)}></Route>
+    <Route path={Routes.LOGIN} component={Login}></Route>
     {/* <Route path={Routes.LOGOUT} component={}></Route>  */}
     <Route path={Routes.DASHBOARD} component={BackgroundHOC(Dashboard)}></Route>
     <Route path={Routes.ISSUES} component={BackgroundHOC(Issues)}></Route>
