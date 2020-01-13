@@ -13,8 +13,8 @@ const routes = (
     {/* <Route path={Routes.LANDING} component={}></Route>
     <Route path={Routes.LOGIN} component={}></Route>
     <Route path={Routes.LOGOUT} component={}></Route> */}
-    <Route path={Routes.DASHBOARD} component={Dashboard}></Route>
-    <Route path={Routes.ISSUES} component={Issues}></Route>
+    <Route path={Routes.DASHBOARD} component={BackgroundHOC(Dashboard)}></Route>
+    <Route path={Routes.ISSUES} component={BackgroundHOC(Issues)}></Route>
     <Route path={Routes.ELABORATE} component={BackgroundHOC(Elaborate)}></Route>
   </Router>
 )
