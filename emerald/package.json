@@ -2,6 +2,7 @@
   "name": "emerald",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://vj6978.github.io/emerald",
   "dependencies": {
     "filepond": "^4.9.3",
     "react": "^16.12.0",
@@ -9,8 +10,12 @@
     "react-filepond": "^7.0.1",
     "react-scripts": "0.9.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
